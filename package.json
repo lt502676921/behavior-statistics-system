@@ -1,0 +1,31 @@
+{
+  "name": "event-analytics-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=dev nodemon bin/www",
+    "prd-dev": "cross-env NODE_ENV=prd_dev nodemon bin/www",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cron": "^1.8.2",
+    "cross-env": "^7.0.3",
+    "date-fns": "^2.28.0",
+    "fs-extra": "^10.0.1",
+    "koa": "^2.13.4",
+    "koa-bodyparser": "^4.3.0",
+    "koa-helmet": "^6.1.0",
+    "koa-json": "^2.0.2",
+    "koa-logger": "^3.2.1",
+    "koa-onerror": "^4.2.0",
+    "koa-router": "^10.1.1",
+    "koa2-cors": "^2.0.6",
+    "lodash": "^4.17.21",
+    "mongoose": "^6.2.10",
+    "nodemon": "^2.0.15"
+  }
+}

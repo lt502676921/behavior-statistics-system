@@ -1,0 +1,19 @@
+version: '3'
+services:
+  event-analytics-server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: event-analytics-server
+    container_name: event-analytics-server
+    ports:
+      - 8091:3002
+    volumes:
+      - /Users/oreo/nginx_logs/event_analytics:/app/nginx_logs/event_analytics
+
+  # jpgs-cli-dev-nginx:
+  #   image: nginx
+  #   container_name: jpgs-cli-dev-nginx
+  #   restart: always
+  #   ports:
+  #     - 80:80
